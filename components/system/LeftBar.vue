@@ -7,7 +7,6 @@
       <ul class="list-none p-3 m-0">
         <li>
           <div
-            v-ripple
             v-styleclass="{
               selector: '@next',
               enterClass: 'hidden',
