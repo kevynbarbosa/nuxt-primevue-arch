@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-y-auto">
     <ul class="list-none p-3 m-0">
-      <ThemingLeftBarMenuExpand v-for="item in links" :key="item.label" :item="item" :ident="0" />
+      <ThemingLeftBarMenuItem v-for="item in links" :key="item.label" :item="item" />
     </ul>
   </div>
 </template>

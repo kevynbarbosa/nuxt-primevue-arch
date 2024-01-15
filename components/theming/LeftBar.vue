@@ -2,7 +2,7 @@
   <div class="flex flex-column h-screen sticky top-0" :style="{ width: size + 'px' }">
     <ThemingLeftBarBrandButton :topBarSize="topBarSize" />
 
-    <ThemingLeftBarMenuCore />
+    <ThemingLeftBarMenuItems />
 
     <ThemingLeftBarUserButton />
   </div>
