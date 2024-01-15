@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-column h-screen sticky top-0" :style="{ width: size + 'px' }">
-    <SystemLeftBarBrandButton />
+    <ThemingLeftBarBrandButton :topBarSize="topBarSize" />
 
     <div class="overflow-y-auto">
       <ul class="list-none p-3 m-0">
@@ -200,7 +200,7 @@
       </ul>
     </div>
 
-    <SystemLeftBarUserButton />
+    <ThemingLeftBarUserButton />
   </div>
 </template>
 

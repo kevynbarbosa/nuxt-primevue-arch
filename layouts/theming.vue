@@ -1,0 +1,26 @@
+<template>
+  <div class="min-h-screen flex relative surface-ground">
+    <ThemingLeftBar :size="leftBarSize" :topBarSize="topBarSize"></ThemingLeftBar>
+
+    <div class="min-h-screen flex flex-column relative flex-auto">
+      <div class="fixed w-full z-1">
+        <ThemingTopBar></ThemingTopBar>
+      </div>
+
+      <div class="h-full" :style="{ 'margin-top': topBarSize + 'px' }">
+        <div class="h-full p-4 flex flex-column flex-auto">
+          <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
+            <slot></slot>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps([]);
+
+const leftBarSize = 300;
+const topBarSize = 60;
+</script>
