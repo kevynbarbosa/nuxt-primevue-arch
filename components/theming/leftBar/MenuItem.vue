@@ -1,5 +1,7 @@
 <template>
-  <li v-if="item.children == undefined">{{ item.label }}</li>
+  <li v-if="item.children == undefined" class="nav-item">
+    <NuxtLink :to="item.path">{{ item.label }}</NuxtLink>
+  </li>
   <template v-else>
     <li>
       <div>{{ item.label }}</div>
@@ -13,3 +15,5 @@
 <script setup>
 const props = defineProps(["item"]);
 </script>
+
+<style scoped></style>
