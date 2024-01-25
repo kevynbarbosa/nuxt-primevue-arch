@@ -55,5 +55,11 @@ const links = ref([
       },
     ],
   },
+
+  {
+    path: "/",
+    icon: "",
+    label: "Item isolado",
+  },
 ]);
 </script>
