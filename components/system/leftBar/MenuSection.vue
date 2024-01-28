@@ -13,7 +13,7 @@
         class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer p-ripple"
       >
         <span class="font-medium">{{ name }}</span>
-        <i class="pi pi-chevron-down"></i>
+        <i :class="icon"></i>
       </div>
       <ul class="list-none p-0 m-0 overflow-hidden">
         <slot></slot>
@@ -25,6 +25,10 @@
 <script setup>
 const props = defineProps({
   name: {
+    type: String,
+    default: "",
+  },
+  icon: {
     type: String,
     default: "",
   },

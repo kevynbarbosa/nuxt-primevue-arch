@@ -1,3 +1,4 @@
+SystemLeftBarMenuDropdown
 <template>
   <div class="flex flex-column h-screen sticky top-0 bg-white" :style="{ width: size + 'px' }">
     <SystemLeftBarBrandButton />
@@ -10,6 +11,26 @@
             <SystemLeftBarMenuItem name="Sub Item" />
           </SystemLeftBarMenuDropdown>
         </SystemLeftBarMenuDropdown>
+
+        <SystemLeftBarMenuItem name="Item" />
+      </SystemLeftBarMenuSection>
+
+      <SystemLeftBarMenuSection name="Theming">
+        <SystemLeftBarMenuDropdown name="Form"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Button">
+          <SystemLeftBarMenuItem name="Button" />
+          <SystemLeftBarMenuItem name="Speed Dial" />
+          <SystemLeftBarMenuItem name="SplitButton" />
+        </SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Data"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Panel"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Overlay"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="File"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Menu"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Chart"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Messages"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Media"></SystemLeftBarMenuDropdown>
+        <SystemLeftBarMenuDropdown name="Misc"></SystemLeftBarMenuDropdown>
 
         <SystemLeftBarMenuItem name="Item" />
       </SystemLeftBarMenuSection>

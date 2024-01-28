@@ -11,8 +11,8 @@
       }"
       class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
     >
-      <i class="pi pi-chart-line mr-2"></i>
-      <span class="font-medium">{{ name }}</span>
+      <i :class="icon"></i>
+      <span class="ml-2 font-medium">{{ name }}</span>
       <i class="pi pi-chevron-down ml-auto"></i>
     </a>
     <ul
@@ -26,6 +26,10 @@
 <script setup>
 const props = defineProps({
   name: {
+    type: String,
+    default: "",
+  },
+  icon: {
     type: String,
     default: "",
   },
