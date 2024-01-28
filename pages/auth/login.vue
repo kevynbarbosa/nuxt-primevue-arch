@@ -13,7 +13,7 @@
     <label for="password1" class="block text-900 font-medium mb-2">Password</label>
     <InputText id="password1" type="password" class="w-full mb-3" />
 
-    <div class="flex align-items-center justify-content-between mb-6">
+    <div class="flex align-items-center justify-content-between mb-6 text-900">
       <div class="flex align-items-center">
         <Checkbox id="rememberme1" :binary="true" v-model="rememberMe" class="mr-2"></Checkbox>
         <label for="rememberme1">Remember me</label>
@@ -21,7 +21,11 @@
       <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
     </div>
 
-    <Button label="Sign In" icon="pi pi-user" class="w-full"></Button>
+    <Button label="Sign in" class="w-full"></Button>
+
+    <div class="w-full text-900 text-center my-2 uppercase">Or</div>
+
+    <Button label="Sign in with Google" icon="pi pi-google" class="w-full"></Button>
   </div>
 </template>
 
@@ -29,4 +33,6 @@
 definePageMeta({
   layout: "auth",
 });
+
+const rememberMe = ref(false);
 </script>

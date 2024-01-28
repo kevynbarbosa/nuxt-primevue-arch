@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-column h-screen sticky top-0" :style="{ width: size + 'px' }">
+  <div class="flex flex-column h-screen sticky top-0 bg-white" :style="{ width: size + 'px' }">
     <SystemLeftBarBrandButton />
 
     <div class="overflow-y-auto">
