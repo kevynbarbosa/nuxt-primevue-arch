@@ -1,6 +1,6 @@
 <template>
   <div class="flex align-items-center px-5 pt-3 flex-shrink-0" :style="{ height: topBarSize + 'px' }">
-    <img src="/images/blocks/logos/hyper-700.svg" alt="Image" height="30" />
+    <img src="/images/blocks/logos/frontend-engine-logo.png" alt="Image" height="30" />
   </div>
 </template>
 
