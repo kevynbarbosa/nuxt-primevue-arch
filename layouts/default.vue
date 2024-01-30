@@ -8,8 +8,8 @@
       </div>
 
       <div class="h-full bg-[#edf1f6]" :style="{ 'margin-top': topBarSize + 'px' }">
-        <div class="h-full p-4 flex flex-column flex-auto">
-          <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
+        <div class="h-full p-2 flex flex-column flex-auto">
+          <div class="surface-border border-round surface-section flex-auto">
             <slot></slot>
           </div>
         </div>
