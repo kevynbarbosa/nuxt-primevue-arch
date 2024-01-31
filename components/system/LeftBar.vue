@@ -18,7 +18,7 @@ SystemLeftBarMenuDropdown
       <SystemLeftBarMenuSection name="Theming">
         <SystemLeftBarMenuDropdown name="Form"></SystemLeftBarMenuDropdown>
         <SystemLeftBarMenuDropdown name="Button">
-          <SystemLeftBarMenuItem name="Button" />
+          <SystemLeftBarMenuItem name="Button" path="/theming/button/button" />
           <SystemLeftBarMenuItem name="Speed Dial" />
           <SystemLeftBarMenuItem name="SplitButton" />
         </SystemLeftBarMenuDropdown>

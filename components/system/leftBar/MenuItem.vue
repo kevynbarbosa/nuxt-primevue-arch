@@ -1,12 +1,13 @@
 <template>
   <li>
-    <a
+    <NuxtLink
+      :to="path"
       v-ripple
-      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+      class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple no-underline"
     >
       <i :class="icon"></i>
       <span class="ml-2 font-medium">{{ name }}</span>
-    </a>
+    </NuxtLink>
   </li>
 </template>
 
@@ -19,6 +20,10 @@ const props = defineProps({
   icon: {
     type: String,
     default: "",
+  },
+  path: {
+    type: String,
+    default: "/",
   },
 });
 
