@@ -20,7 +20,7 @@
   </div>
 
   <div class="grid">
-    <div class="col-6">
+    <div class="col-12">
       <Card>
         <template #title>Outline Buttons</template>
         <template #content>
@@ -37,7 +37,7 @@
         </template>
       </Card>
     </div>
-    <div class="col-6">
+    <div class="col-12">
       <Card>
         <template #title>Rounded Buttons</template>
         <template #content>
@@ -50,6 +50,34 @@
             <Button label="Help" severity="help" rounded />
             <Button label="Danger" severity="danger" rounded />
             <Button label="Contrast" severity="contrast" rounded />
+          </div>
+        </template>
+      </Card>
+    </div>
+    <div class="col-12">
+      <Card>
+        <template #title>Disabled buttons</template>
+        <template #content>
+          <div class="flex justify-content-center flex-wrap gap-2">
+            <Button label="Primary" disabled />
+            <Button label="Secondary" severity="secondary" disabled />
+            <Button label="Success" severity="success" disabled />
+            <Button label="Info" severity="info" disabled />
+            <Button label="Warning" severity="warning" disabled />
+            <Button label="Help" severity="help" disabled />
+            <Button label="Danger" severity="danger" disabled />
+            <Button label="Contrast" severity="contrast" disabled />
+          </div>
+
+          <div class="mt-2 flex justify-content-center flex-wrap gap-2">
+            <Button label="Primary" outlined disabled />
+            <Button label="Secondary" severity="secondary" outlined disabled />
+            <Button label="Success" severity="success" outlined disabled />
+            <Button label="Info" severity="info" outlined disabled />
+            <Button label="Warning" severity="warning" outlined disabled />
+            <Button label="Help" severity="help" outlined disabled />
+            <Button label="Danger" severity="danger" outlined disabled />
+            <Button label="Contrast" severity="contrast" outlined disabled />
           </div>
         </template>
       </Card>
@@ -116,37 +144,6 @@
               class="w-9rem"
               aria-label="Do you confirm"
             />
-          </div>
-        </template>
-      </Card>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="col-12">
-      <Card>
-        <template #title>Disabled buttons</template>
-        <template #content>
-          <div class="flex justify-content-center flex-wrap gap-2">
-            <Button label="Primary" disabled />
-            <Button label="Secondary" severity="secondary" disabled />
-            <Button label="Success" severity="success" disabled />
-            <Button label="Info" severity="info" disabled />
-            <Button label="Warning" severity="warning" disabled />
-            <Button label="Help" severity="help" disabled />
-            <Button label="Danger" severity="danger" disabled />
-            <Button label="Contrast" severity="contrast" disabled />
-          </div>
-
-          <div class="mt-2 flex justify-content-center flex-wrap gap-2">
-            <Button label="Primary" outlined disabled />
-            <Button label="Secondary" severity="secondary" outlined disabled />
-            <Button label="Success" severity="success" outlined disabled />
-            <Button label="Info" severity="info" outlined disabled />
-            <Button label="Warning" severity="warning" outlined disabled />
-            <Button label="Help" severity="help" outlined disabled />
-            <Button label="Danger" severity="danger" outlined disabled />
-            <Button label="Contrast" severity="contrast" outlined disabled />
           </div>
         </template>
       </Card>
