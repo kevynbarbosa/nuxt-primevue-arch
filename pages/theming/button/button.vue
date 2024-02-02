@@ -154,112 +154,93 @@
   </div>
 
   <div class="grid">
-    <div class="col-3">
+    <div class="col-6">
       <Card>
         <template #title>Block buttons</template>
         <template #content>
           <div class="mt-2 flex justify-content-center flex-wrap gap-2">
             <Button class="w-full" label="Button block" severity="primary" />
             <Button class="w-full" label="Button block" severity="primary" outlined />
+            <Button class="w-full" label="Button block" severity="primary" raised outlined />
           </div>
         </template>
       </Card>
     </div>
-    <div class="col-3">
+    <div class="col-6">
       <Card>
         <template #title>Raised text</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-3">
-      <Card>
-        <template #title>Centered</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-3">
-      <Card>
-        <template #title>Alignment</template>
-        <template #content></template>
+        <template #content>
+          <div class="mt-2 flex justify-content-center flex-wrap gap-2">
+            <Button label="Primary" text raised />
+            <Button label="Secondary" severity="secondary" text raised />
+            <Button label="Success" severity="success" text raised />
+            <Button label="Info" severity="info" text raised />
+            <Button label="Warning" severity="warning" text raised />
+            <Button label="Help" severity="help" text raised />
+            <Button label="Danger" severity="danger" text raised />
+            <Button label="Plain" plain text raised />
+          </div>
+        </template>
       </Card>
     </div>
   </div>
 
   <div class="grid">
-    <div class="col-3">
+    <div class="col-6">
       <Card>
         <template #title>Button sizes</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-3">
-      <Card>
-        <template #title>Button sizes</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-3">
-      <Card>
-        <template #title>Button sizes</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-3">
-      <Card>
-        <template #title>Button sizes</template>
-        <template #content></template>
+        <template #content>
+          <div class="card flex flex-wrap align-items-center justify-content-center gap-3">
+            <Button label="Small" icon="pi pi-check" size="small" />
+            <Button label="Normal" icon="pi pi-check" />
+            <Button label="Large" icon="pi pi-check" size="large" />
+          </div>
+        </template>
       </Card>
     </div>
   </div>
 
-  <div class="text-2xl">Button Groups</div>
   <div class="grid">
     <div class="col-4">
       <Card>
-        <template #title>Default</template>
-        <template #content></template>
+        <template #title>Button groups</template>
+        <template #content>
+          <div class="flex align-items-center justify-content-center">
+            <span class="p-buttonset">
+              <Button label="Save" icon="pi pi-check" />
+              <Button label="Delete" icon="pi pi-trash" />
+              <Button label="Cancel" icon="pi pi-times" />
+            </span>
+          </div>
+        </template>
       </Card>
     </div>
     <div class="col-4">
       <Card>
-        <template #title>Outline buttons</template>
-        <template #content></template>
+        <template #title>Button groups</template>
+        <template #content>
+          <div class="flex align-items-center justify-content-center">
+            <span class="p-buttonset">
+              <Button label="Save" icon="pi pi-check" outlined />
+              <Button label="Delete" icon="pi pi-trash" outlined />
+              <Button label="Cancel" icon="pi pi-times" outlined />
+            </span>
+          </div>
+        </template>
       </Card>
     </div>
     <div class="col-4">
       <Card>
-        <template #title>Rounded buttons</template>
-        <template #content></template>
-      </Card>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="col-6">
-      <Card>
-        <template #title>Checkboxes</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-6">
-      <Card>
-        <template #title>Radio</template>
-        <template #content></template>
-      </Card>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="col-6">
-      <Card>
-        <template #title>Sizing</template>
-        <template #content></template>
-      </Card>
-    </div>
-    <div class="col-6">
-      <Card>
-        <template #title>Nesting</template>
-        <template #content></template>
+        <template #title>Button groups</template>
+        <template #content>
+          <div class="flex align-items-center justify-content-center">
+            <span class="p-buttonset">
+              <Button label="Save" icon="pi pi-check" rounded />
+              <Button label="Delete" icon="pi pi-trash" rounded />
+              <Button label="Cancel" icon="pi pi-times" rounded />
+            </span>
+          </div>
+        </template>
       </Card>
     </div>
   </div>
