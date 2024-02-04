@@ -1,14 +1,6 @@
 // Arquivos de temas disponíveis em:
+// Utilizado tema lara-light como base
 // https://github.com/primefaces/primevue-sass-theme/tree/main
-
-@function adjust-lightness($color, $percentage) {
-  @return adjust-color($color, $lightness: $percentage);
-}
-
-// Função para ajustar a saturação da cor
-@function adjust-saturation($color, $percentage) {
-  @return adjust-color($color, $saturation: $percentage);
-}
 
 @import "./variables";
 @import "./_fonts";
