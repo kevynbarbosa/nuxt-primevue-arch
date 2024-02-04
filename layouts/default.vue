@@ -3,7 +3,7 @@
     <SystemLeftBar :size="leftBarSize" :topBarSize="topBarSize"></SystemLeftBar>
 
     <div class="min-h-screen flex flex-column relative flex-auto">
-      <div class="fixed w-full z-1">
+      <div class="fixed w-full" style="z-index: 1000">
         <SystemTopBar></SystemTopBar>
       </div>
 

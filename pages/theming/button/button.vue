@@ -12,7 +12,9 @@
             <Button label="Warning" severity="warning" />
             <Button label="Help" severity="help" />
             <Button label="Danger" severity="danger" />
-            <Button label="Contrast" severity="contrast" />
+            <NuxtLink to="https://vuejs.org/" target="_blank" rel="noopener">
+              <Button label="External" link />
+            </NuxtLink>
           </div>
         </template>
       </Card>
@@ -32,7 +34,6 @@
             <Button label="Warning" severity="warning" outlined />
             <Button label="Help" severity="help" outlined />
             <Button label="Danger" severity="danger" outlined />
-            <Button label="Contrast" severity="contrast" outlined />
           </div>
         </template>
       </Card>
@@ -49,7 +50,6 @@
             <Button label="Warning" severity="warning" rounded />
             <Button label="Help" severity="help" rounded />
             <Button label="Danger" severity="danger" rounded />
-            <Button label="Contrast" severity="contrast" rounded />
           </div>
         </template>
       </Card>
@@ -66,7 +66,6 @@
             <Button label="Warning" severity="warning" disabled />
             <Button label="Help" severity="help" disabled />
             <Button label="Danger" severity="danger" disabled />
-            <Button label="Contrast" severity="contrast" disabled />
           </div>
 
           <div class="mt-2 flex justify-content-center flex-wrap gap-2">
@@ -77,7 +76,6 @@
             <Button label="Warning" severity="warning" outlined disabled />
             <Button label="Help" severity="help" outlined disabled />
             <Button label="Danger" severity="danger" outlined disabled />
-            <Button label="Contrast" severity="contrast" outlined disabled />
           </div>
         </template>
       </Card>

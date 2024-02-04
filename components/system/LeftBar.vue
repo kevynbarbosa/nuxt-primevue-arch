@@ -19,7 +19,7 @@ SystemLeftBarMenuDropdown
         <SystemLeftBarMenuDropdown name="Form"></SystemLeftBarMenuDropdown>
         <SystemLeftBarMenuDropdown name="Button">
           <SystemLeftBarMenuItem name="Button" path="/theming/button/button" />
-          <SystemLeftBarMenuItem name="Speed Dial" />
+          <SystemLeftBarMenuItem name="Speed Dial" path="/theming/button/speeddial" />
           <SystemLeftBarMenuItem name="SplitButton" />
         </SystemLeftBarMenuDropdown>
         <SystemLeftBarMenuDropdown name="Data"></SystemLeftBarMenuDropdown>
