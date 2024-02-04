@@ -1,9 +1,13 @@
 /* Customizations to the designer theme should be defined here */
 
-.p-button:focus {
-  // box-shadow: none;
-}
-
 html {
   font-size: 12px;
+}
+
+@layer primevue {
+  .p-button {
+    &:not(:disabled):focus {
+      box-shadow: 0 0 0 $buttonFocusSize var(--primary-100);
+    }
+  }
 }
