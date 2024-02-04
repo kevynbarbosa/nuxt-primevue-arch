@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   css: [
     // "primevue/resources/themes/lara-light-green/theme.css",
-    "~/assets/theme/mytheme/theme.scss",
+    "~/assets/theme/custom-nifty/theme.scss",
     "primeicons/primeicons.css",
     "primeflex/primeflex.min.css",
     "@/assets/css/main.css",
