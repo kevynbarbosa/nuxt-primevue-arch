@@ -1,7 +1,10 @@
-$primaryColor: #10b981 !default;
-$primaryLightColor: #a7f3d0 !default;
-$primaryDarkColor: #059669 !default;
-$primaryDarkerColor: #047857 !default;
+$buttonFocusSize: 0.1rem;
+$whiteText: #ffffff;
+
+$primaryColor: #1e3955 !default;
+$primaryLightColor: #1e3955 !default;
+$primaryDarkColor: #1e3955 !default;
+$primaryDarkerColor: #1e3955 !default;
 $primaryTextColor: #ffffff !default;
 
 $highlightBg: #f0fdfa !default;
@@ -19,7 +22,7 @@ $colors: (
   "orange": #f97316,
   "bluegray": #64748b,
   "purple": #a855f7,
-  "red": #ff3d32,
+  "red": #df5645,
   "primary": $primaryColor,
 );
 
@@ -176,10 +179,10 @@ $infoButtonTextActiveColor: $infoButtonTextColor !default;
 $infoButtonActiveBorderColor: #0369a1 !default;
 $infoButtonFocusShadow: 0 0 0 0.2rem #bfdbfe !default;
 
-$successButtonBg: #22c55e !default;
+$successButtonBg: #9fcc2e !default;
 $successButtonTextColor: #ffffff !default;
 $successButtonBorder: 1px solid #22c55e !default;
-$successButtonHoverBg: #16a34a !default;
+$successButtonHoverBg: #87ad27 !default;
 $successButtonTextHoverColor: $successButtonTextColor !default;
 $successButtonHoverBorderColor: #16a34a !default;
 $successButtonActiveBg: #15803d !default;
@@ -209,16 +212,27 @@ $helpButtonTextActiveColor: $helpButtonTextColor !default;
 $helpButtonActiveBorderColor: #7e22ce !default;
 $helpButtonFocusShadow: 0 0 0 0.2rem #e9d5ff !default;
 
-$dangerButtonBg: #ef4444 !default;
-$dangerButtonTextColor: #ffffff !default;
+$dangerButtonBg: var(--red-500) !default;
+$dangerButtonTextColor: $whiteText !default;
 $dangerButtonBorder: 1px solid $dangerButtonBg !default;
-$dangerButtonHoverBg: #dc2626 !default;
+$dangerButtonHoverBg: var(--red-600) !default;
 $dangerButtonTextHoverColor: $dangerButtonTextColor !default;
-$dangerButtonHoverBorderColor: #dc2626 !default;
-$dangerButtonActiveBg: #b91c1c !default;
+$dangerButtonHoverBorderColor: var(--red-500) !default;
+$dangerButtonActiveBg: var(--red-700) !default;
 $dangerButtonTextActiveColor: $dangerButtonTextColor !default;
-$dangerButtonActiveBorderColor: #b91c1c !default;
-$dangerButtonFocusShadow: 0 0 0 0.2rem #fecaca !default;
+$dangerButtonActiveBorderColor: var(--red-400) !default;
+$dangerButtonFocusShadow: 0 0 0 $buttonFocusSize var(--red-100) !default;
+
+// $dangerButtonBg: #ef4444 !default;
+// $dangerButtonTextColor: #ffffff !default;
+// $dangerButtonBorder: 1px solid $dangerButtonBg !default;
+// $dangerButtonHoverBg: #dc2626 !default;
+// $dangerButtonTextHoverColor: $dangerButtonTextColor !default;
+// $dangerButtonHoverBorderColor: #dc2626 !default;
+// $dangerButtonActiveBg: #b91c1c !default;
+// $dangerButtonTextActiveColor: $dangerButtonTextColor !default;
+// $dangerButtonActiveBorderColor: #b91c1c !default;
+// $dangerButtonFocusShadow: 0 0 0 0.2rem #fecaca !default;
 
 $linkButtonColor: $primaryDarkerColor !default;
 $linkButtonHoverColor: $primaryDarkerColor !default;
