@@ -116,7 +116,7 @@
     </Card>
 
     <Card>
-      <template #title>Speed dial Tooltip</template>
+      <template #title>Speed dial mask</template>
       <template #content>
         <div :style="{ position: 'relative', height: '500px' }">
           <SpeedDial :model="items" direction="up" mask :style="{ right: '1rem', bottom: '1rem' }" />
@@ -125,7 +125,7 @@
     </Card>
 
     <Card>
-      <template #title>Speed dial Tooltip</template>
+      <template #title>Speed dial custom</template>
       <template #content>
         <div class="flex align-items-end justify-content-center" :style="{ position: 'relative', height: '350px' }">
           <SpeedDial
