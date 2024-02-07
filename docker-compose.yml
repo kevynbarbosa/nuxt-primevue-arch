@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  front:
+    # Build the image using the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Map the local port 3000 to the container's port 3000
+    ports:
+      - "3000:3000"
+    # Working dir
+    working_dir: /var/www
+    # Mount volumes if necessary
+    volumes:
+      - .:/var/www
+    # Start
+    command: /bin/sh -c "npm i && npm run dev"
+    # Set restart policy
+    restart: always
