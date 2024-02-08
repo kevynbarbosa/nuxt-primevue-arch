@@ -10,4 +10,10 @@ html {
       box-shadow: 0 0 0 $buttonFocusSize var(--primary-100);
     }
   }
+
+  // Probably a bug - but had to do
+  .p-splitbutton-menubutton {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }

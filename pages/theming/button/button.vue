@@ -238,10 +238,56 @@
         </template>
       </Card>
     </div>
+
+    <div class="col-4">
+      <Card>
+        <template #title>Split Buttons</template>
+        <template #content>
+          <div class="flex justify-content-center flex-wrap gap-3">
+            <SplitButton label="Save" :model="items" @click="save"></SplitButton>
+            <SplitButton label="Save" :model="items" @click="save" severity="success"></SplitButton>
+            <SplitButton label="Save" :model="items" @click="save" severity="info"></SplitButton>
+            <SplitButton label="Save" :model="items" @click="save" severity="danger"></SplitButton>
+          </div>
+        </template>
+      </Card>
+    </div>
   </div>
+
+  <Toast></Toast>
 </template>
 
 <script setup>
+import { useToast } from "primevue/usetoast";
+
+const toast = useToast();
+
 const toggleButton1 = ref(false);
 const toggleButton2 = ref(false);
+
+const items = [
+  {
+    label: "Update",
+    command: () => {
+      toast.add({ severity: "success", summary: "Updated", detail: "Data Updated", life: 3000 });
+    },
+  },
+  {
+    label: "Delete",
+    command: () => {
+      toast.add({ severity: "warn", summary: "Delete", detail: "Data Deleted", life: 3000 });
+    },
+  },
+  {
+    label: "Vue Website",
+    command: () => {
+      window.location.href = "https://vuejs.org/";
+    },
+  },
+  { label: "Upload", to: "/fileupload" },
+];
+
+const save = () => {
+  toast.add({ severity: "success", summary: "Success", detail: "Data Saved", life: 3000 });
+};
 </script>
