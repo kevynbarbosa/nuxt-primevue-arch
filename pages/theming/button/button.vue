@@ -2,6 +2,26 @@
   <div class="grid">
     <div class="col-12">
       <Card>
+        <template #title>Unstyled Buttons</template>
+        <template #content>
+          <div class="flex justify-content-center flex-wrap gap-2">
+            <Button label="Primary" unstyled />
+            <Button label="Secondary" severity="secondary" unstyled />
+            <Button label="Success" severity="success" outlined unstyled />
+            <Button label="Info" severity="info" unstyled />
+            <Button label="Warning" severity="warning" unstyled />
+            <Button label="Help" severity="help" unstyled />
+            <Button label="Danger" severity="danger" unstyled />
+            <NuxtLink to="https://vuejs.org/" target="_blank" rel="noopener">
+              <Button label="External" link />
+            </NuxtLink>
+          </div>
+        </template>
+      </Card>
+    </div>
+
+    <div class="col-12">
+      <Card>
         <template #title>Main Buttons</template>
         <template #content>
           <div class="flex justify-content-center flex-wrap gap-2">
