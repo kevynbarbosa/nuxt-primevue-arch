@@ -1,9 +1,10 @@
 <template>
   <div class="text-center mb-5">
-    <img src="/images/blocks/logos/frontend-engine-logo.png" alt="Image" height="50" class="mb-3" />
     <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
     <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-    <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+    <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" @click="router.push('/auth/create-account')">
+      Create today!
+    </a>
   </div>
 
   <div>
@@ -18,7 +19,12 @@
         <Checkbox id="rememberme1" :binary="true" v-model="rememberMe" class="mr-2"></Checkbox>
         <label for="rememberme1">Remember me</label>
       </div>
-      <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+      <a
+        class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer"
+        @click="router.push('/auth/recover-password')"
+      >
+        Forgot password?
+      </a>
     </div>
 
     <Button label="Sign in" class="w-full"></Button>
@@ -33,6 +39,8 @@
 definePageMeta({
   layout: "auth",
 });
+
+const router = useRouter();
 
 const rememberMe = ref(false);
 </script>
