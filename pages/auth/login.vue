@@ -27,11 +27,11 @@
       </a>
     </div>
 
-    <Button label="Sign in" class="w-full"></Button>
+    <Button label="Sign in" class="w-full" @click="router.push('/')"></Button>
 
     <div class="w-full text-900 text-center my-2 uppercase">Or</div>
 
-    <Button label="Sign in with Google" icon="pi pi-google" class="w-full"></Button>
+    <Button label="Sign in with Google" icon="pi pi-google" class="w-full" @click="router.push('/')"></Button>
   </div>
 </template>
 
